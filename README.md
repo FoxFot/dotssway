@@ -1,7 +1,6 @@
 # My **dots files on sway**
 ## Install programs
-```sudo apt install sway waybar wofi ranger kitty fish 
-```
+```sudo apt install sway waybar wofi ranger kitty fish ```
 ## Install OhMyFish
 ```git clone https://github.com/oh-my-fish/oh-my-fish
 cd oh-my-fish
@@ -13,6 +12,6 @@ fish install --offline=omf.tar.gz
 ```pip install pywal
 pip install pywalfox
 ```
-
+## Screenshots
 <img src=https://github.com/FoxFot/dotssway/blob/master/screen-1714407896.png>
 <img src=https://github.com/FoxFot/dotssway/blob/master/screen-1714407922.png>
