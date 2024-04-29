@@ -2,14 +2,16 @@
 ## Install programs
 ```sudo apt install sway waybar wofi ranger kitty fish ```
 ## Install OhMyFish
-```git clone https://github.com/oh-my-fish/oh-my-fish
+```
+git clone https://github.com/oh-my-fish/oh-my-fish
 cd oh-my-fish
 bin/install --offline
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
 fish install --offline=omf.tar.gz
 ```
 ## Install Pywal
-```pip install pywal
+```
+pip install pywal
 pip install pywalfox
 ```
 ## Screenshots
