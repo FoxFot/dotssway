@@ -1,0 +1,113 @@
+{
+// НАСТРОЙКИ БАРА
+	"layer": "top", // Слой на котором расположен вайбар
+	"position": "top", // Положение бара (top|bottom|left|right)
+	"height": 30, // Высота бара
+	"width": 1250, // Ширина бара
+	"margin-top": 5, // Отступ снизу
+
+    
+// МОДУЛИ
+	"modules-left": ["custom/menu", "sway/workspaces"],
+	"modules-center": ["clock", "tray"],
+	"modules-right": ["sway/language", "battery", "pulseaudio", "cpu", "custom/power"],
+
+
+// КНОПКИ ВОРКСПЕЙСОВ
+	"sway/workspaces": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"format": "{icon}",
+	"format-icons": {
+       		"1": "I",
+        	"2": "II",
+        	"3": "III",
+        	"4": "IV",
+		"5": "V",
+		"6": "VI",
+		"7": "VII",
+		"8": "VIII",
+		"9": "IX",
+		"10": "X",
+        	"urgent": "",
+        	"focused": "",
+		"default": ""
+		}
+	},
+
+
+// МЕНЮ
+	"custom/menu": {
+	"format": "<span color=\"#f5f7fa\">{icon}</span>",
+	"format-icons": {"default": [""]},
+	"on-click": "set $menu dmenu_path | wofi --show drun",
+	"escape": true,
+	"tooltip": false
+	},
+
+
+// ЧАСЫ
+	"clock": {
+	"format": "<span color=\"#a2c3e1\"></span> {:%H:%M:%S %p}",
+	"interval": 1,
+	"on-click": "swaymsg exec \\$calendar",
+	"tooltip": false
+	},
+
+// ТРЕЙ    
+	"tray": {
+	"icon-size": 16,
+	"spacing": 10,
+	"tooltip": false
+	},
+
+// ЛАНГУАГЕ
+	"sway/language": {
+		"format": "{long}",	
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+	},
+
+
+// ПУЛЬСА    
+	"pulseaudio": {
+	"scroll-step": 5,
+	"format": "{icon} {volume}%",
+	"format-bluetooth": "{volume}% {icon} {format_source}",
+	"format-bluetooth-muted": " {icon} {format_source}",
+	"format-muted": " {format_source}",
+	"format-source": "{volume}% ",
+	"format-source-muted": "",
+	"format-icons": {
+		"headphone": "",
+		"hands-free": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", "", ""]
+	},
+	"on-click": "pavucontrol",
+	"tooltip": false
+	},
+
+// Battery
+	"battery": {
+	"format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+
+},
+
+// ЗАГРУЗКА ПРОЦА
+	"cpu": {
+	"format": "   {usage}%",
+	"tooltip": false
+	},
+
+
+// ПОВЕРМЕНЮ
+	"custom/power": {
+	"format": "<span color=\"#f5f7fa\">{icon}</span>",
+	"format-icons": {"default": [""]},
+	"on-click": "sh /home/d/.config/waybar/scripts/power.sh"
+	}
+}

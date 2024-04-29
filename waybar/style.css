@@ -1,0 +1,115 @@
+/*ОБЩЕЕ*/
+* {
+    border-radius: 10px;
+    font-family: JetBrainsMono, Symbols Nerd Font;
+    font-size: 12px;
+}
+
+/*ЦВЕТА*/
+@import '/home/d/.cache/wal/colors-waybar.css';
+
+#waybar {
+    background: @color0;
+}
+
+/*ВОРКСПЕЙСЫ*/
+#workspaces button {
+    padding: 5px 5px;
+    margin: 3px 5px;
+    background-color: @color0;
+    color: @color10;
+    border-radius: 10px;
+}
+#workspaces button:hover {
+    background: @color0;
+    color: @color10;
+    border-radius: 10px;
+}
+#workspaces button.focused {
+    background: @color0;
+    color: @colo7;
+    border-radius: 10px;
+}
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+/*МОДУЛИ*/
+#custom-menu {
+    color: @color7;
+    background-color: @color1;
+    padding: 0px 10px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+
+#clock {
+    padding: 5px 10px;
+    margin: 5px 10px;
+    color: @color7;
+    background-color: @color9;
+    border-radius: 10px 10px 10px 10px;
+}
+#cava {
+    padding: 5px 10px;
+    margin: 5px 10px;
+    color:@color7;
+    background-color: @color0;
+}
+#custom-cmus {
+    padding: 0px 10px;
+    margin: 5px 5px;
+    color: @color0;
+    background: @color7;
+    border-radius: 10px;
+}
+
+#tray {
+    padding: 0px 10px;
+    margin: 5px 5px;
+    color: @color7;
+    background: @color10;
+    border-radius: 10px;
+}
+
+#language {
+    padding: 0px 10px 0px 13px;;
+    margin: 5px 0px 5px 0px;
+    color: @color7;
+    background-color: @color10;
+    border-radius: 10px 0px 0px 10px;
+    font-family: JetBrainsMono-Bold;
+}
+
+#pulseaudio {
+    padding: 0px 10px 0px 0px;
+    margin: 5px 0px 5px 0px;
+    color: @color7;
+    background: @color10;
+    border-radius: 0px 0px 0px 0px;
+}
+#battery {
+    padding: 0px 10px 0px 10px;
+    margin: 5px 0px 5px 0px;
+    color: @color7;
+    background: @color10;
+    border-radius: 0px;
+
+}
+
+#cpu{
+    padding: 0px 10px 0px 10px;
+    margin: 5px 5px 5px 0px;
+    color: @color7;
+    background: @color10;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#custom-power {
+    color: @color7;
+    background-color: @color1;
+    padding: 0px 10px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+@import '/home/d/.cache/wal/colors-waybar.css';
+/* параметры вообще для всего */
+*{
+    font-family: JetBrainsMono;
+    font-size: 12px;
+    border: none;
+}
+
+/* параметры для окна */
+window {
+    background-color: @color0;
+    border-radius: 10;
+}
+
+/* параметры для окна ввода */
+#input {
+    margin: 10 0 10 0px;
+    border-radius: 10;
+    border: none;
+    background-color: @color10;
+    color: @color7;
+}
+
+/* параметры для окна с приложениями */
+#inner-box {
+    background-color: @color0;
+    color: @color7;
+}
+
+/* параметры пространства вокруг окна wofi */
+#outer-box {
+    margin: 20px;
+    padding:0px;
+    background-color: @color0;
+}
+
+/* параметры для полосы прокрутки */
+#scroll {
+}
+
+/* параметры для текста */
+#text {
+padding: 5px;
+color: @color7;
+}
+
+/* параметры для 2й колонки если таковая имеется */
+#entry:nth-child(even){
+    background-color: @color0;
+}
+
+/* параметры для выделенного пункта */
+#entry:selected {
+    background-color: @color10; 
+    color: @color7;
+    border-radius: 10;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    border: none;
+}
+
+/* параметры выделенного текста */
+#text:selected {
+color: @color7;
+}
+
+/* параметры для иконок */
+#img
+
+/* параметры для не выделенного */
+#unselected
+
